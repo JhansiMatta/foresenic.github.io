@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Investigators - Forensic Evidence Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Investigators</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="evidence.html">Evidence</a></li>
+                <li><a href="investigators.html">Investigators</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit-investigator.php" method="post">
+            <label for="investigatorName">Name:</label>
+            <input type="text" id="investigatorName" name="name" required><br>
+
+            <label for="investigatorRank">Rank:</label>
+            <input type="text" id="investigatorRank" name="rank" required><br>
+
+            <!-- Include other fields necessary for managing investigators -->
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Forensic Evidence Management and Investigation System</p>
+    </footer>
+</body>
+</html>

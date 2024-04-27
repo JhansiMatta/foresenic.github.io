@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Case - Forensic Evidence Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Case</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="evidence.html">Evidence</a></li>
+                <li><a href="investigators.html">Investigators</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit-case.php" method="post">
+            <label for="caseDescription">Case Description:</label>
+            <input type="text" id="caseDescription" name="description" required><br>
+
+            <label for="caseDateOpened">Date Opened:</label>
+            <input type="date" id="caseDateOpened" name="date_opened" required><br>
+
+            <label for="caseStatus">Status:</label>
+            <select id="caseStatus" name="status" required>
+                <option value="Open">Open</option>
+                <option value="Closed">Closed</option>
+                <option value="Pending">Pending</option>
+            </select><br>
+
+            <label for="caseType">Type ID:</label>
+            <input type="number" id="caseType" name="type_id" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Forensic Evidence Management and Investigation System</p>
+    </footer>
+</body>
+</html>

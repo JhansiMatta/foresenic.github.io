@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Evidence - Forensic Evidence Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Evidence</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cases.html">Cases</a></li>
+                <li><a href="evidence.html">Evidence</a></li>
+                <li><a href="investigators.html">Investigators</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit-evidence.php" method="post">
+            <label for="evidenceDescription">Evidence Description:</label>
+            <input type="text" id="evidenceDescription" name="description" required><br>
+
+            <label for="evidenceDateCollected">Date Collected:</label>
+            <input type="date" id="evidenceDateCollected" name="date_collected" required><br>
+
+            <label for="evidenceLocationFound">Location Found:</label>
+            <input type="text" id="evidenceLocationFound" name="location_found" required><br>
+
+            <!-- Assume you'll need to associate the evidence with a case -->
+            <label for="caseId">Case ID:</label>
+            <input type="number" id="caseId" name="case_id" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Forensic Evidence Management and Investigation System</p>
+    </footer>
+</body>
+</html>
